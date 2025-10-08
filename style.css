@@ -1,13 +1,13 @@
 /* --- Paleta de Cores e Estilos CSS --- */
 :root {
-    --primary-red: #B71C1C; /* Vermelho escuro principal */
-    --secondary-red: #D32F2F; /* Vermelho vibrante */
-    --tertiary-red: #EF5350; /* Vermelho claro/salmão para destaque */
-    --text-dark: #212121; /* Texto escuro */
-    --text-light: #FAFAFA; /* Texto claro */
-    --bg-light: #FDFDFD; /* Fundo muito claro */
-    --bg-dark: #333333; /* Fundo escuro para footer */
-    --border-light: #EEEEEE; /* Borda clara */
+    --primary-red: #B71C1C;
+    --secondary-red: #D32F2F;
+    --tertiary-red: #EF5350;
+    --text-dark: #212121;
+    --text-light: #FAFAFA;
+    --bg-light: #FDFDFD;
+    --bg-dark: #333333;
+    --border-light: #EEEEEE;
     --gradient-red: linear-gradient(135deg, var(--primary-red) 0%, var(--secondary-red) 100%);
 }
 * {
@@ -22,7 +22,6 @@ body {
     color: var(--text-dark);
     background-color: var(--bg-light);
 }
-/* --- Header e Navegação --- */
 .header {
     background-color: var(--text-light);
     position: fixed;
@@ -74,7 +73,6 @@ body {
 .nav-list a:hover::after {
     width: 100%;
 }
-/* --- Hero Section (Destaque) --- */
 .hero-section {
     background: var(--gradient-red);
     color: var(--text-light);
@@ -116,7 +114,6 @@ body {
     color: var(--text-light);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-/* --- Seções Gerais --- */
 .section {
     padding: 6rem 2rem;
     max-width: 1200px;
@@ -139,7 +136,6 @@ body {
     margin: 15px auto 0;
     border-radius: 2px;
 }
-/* --- Seção de Serviços --- */
 .servicos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -176,7 +172,6 @@ body {
     font-size: 0.95rem;
     color: #616161;
 }
-/* --- Seção de Portfólio --- */
 .portifolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -227,7 +222,6 @@ body {
     font-size: 0.9rem;
     color: rgba(255,255,255,0.8);
 }
-/* --- Seção de Contato --- */
 .contact-section {
     text-align: center;
     background: var(--gradient-red);
@@ -286,7 +280,6 @@ body {
     color: var(--text-light);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
-/* --- Footer --- */
 .footer {
     background-color: var(--bg-dark);
     color: var(--text-light);
@@ -306,7 +299,6 @@ body {
 .footer-social a:hover {
     color: var(--tertiary-red);
 }
-/* --- Responsividade --- */
 @media (max-width: 768px) {
     .nav {
         flex-direction: column;
